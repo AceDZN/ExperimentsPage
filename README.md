@@ -11,8 +11,8 @@ an Experiments list for my site
 :computer: Checkout this repo, install dependencies, then start the http-server process with the following:
 
 ```
-	> git clone git@github.com:AceDZN/ReduxGulpStarterKit.git
-	> cd ReduxGulpStarterKit
+	> git clone git@github.com:AceDZN/ExperimentsPage.git
+	> cd ExperimentsPage
 	> npm install
 	> gulp
 ```
