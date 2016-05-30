@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:400,600,700,300);
+body {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  color: #4c4c4c;
+  background: #F5F5F5; }
+
+.mb0 {
+  margin-bottom: 0; }
+
+a {
+  color: #4D6B82; }
+
+h1, h2 {
+  text-shadow: 0px 1px 0px #fff,0px 2px 4px #4C4C4C,0px -3px 2px #fff; }
+
+h3 {
+  text-shadow: 0 1px 0 #fff,0 1px 2px #4c4c4c,0 -3px 2px #fff; }
+  h3.section-title {
+    font-weight: 100;
+    text-shadow: 0px 0px 0px #fff; }
+
+.navbar-nav {
+  font-size: 16px; }
+  .navbar-nav .caret {
+    margin-left: 5px; }
+
+.navbar-brand {
+  padding: 0 10px; }
+  .navbar-brand svg {
+    padding: 10px;
+    background: #222;
+    border-radius: 50%;
+    box-shadow: 0 6px 2px 0 #F5F5F5;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform; }
+  .navbar-brand:hover svg {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg); }
+
+.list-container .platform-logo svg {
+  opacity: 0.3;
+  margin-top: 10px; }
+
+.list-container:hover .platform-logo svg {
+  opacity: 0.8; }
+
+.platform-logo svg {
+  margin-top: 20px; }
+
+li.list-group-item {
+  font-size: 16px;
+  padding: 0; }
+  li.list-group-item:hover {
+    background: #F3F3F3;
+    cursor: pointer; }
+    li.list-group-item:hover a {
+      text-decoration: none; }
+  li.list-group-item a {
+    padding: 10px 15px;
+    display: block; }
+
+.exp-frame {
+  width: 100%;
+  border: 0px solid #fff;
+  height: 100%;
+  min-height: 600px; }
+
+.github-link {
+  margin-right: 10px; }

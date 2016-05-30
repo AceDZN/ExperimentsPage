@@ -1,0 +1,51 @@
+{
+  "name": "ExperimentsPage",
+  "version": "1.0.0",
+  "description": "an Experiments list for my site",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require babel-core/register --reporter dot test/**/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AceDZN/ExperimentsPage.git"
+  },
+  "keywords": [
+    "experiments"
+  ],
+  "author": "Alex Sindalovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AceDZN/ReduxGulpStarterKit/issues"
+  },
+  "homepage": "https://github.com/AceDZN/ReduxGulpStarterKit#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "*",
+    "expect": "^1.20.1",
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-server-livereload": "*",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "mocha": "^2.4.5",
+    "object-assign": "*",
+    "react-addons-test-utils": "^15.1.0",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^2.0.1",
+    "react-svg-morph": "^0.1.9"
+  }
+}
