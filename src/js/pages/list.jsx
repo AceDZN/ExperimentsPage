@@ -13,6 +13,10 @@ export default class ListPage extends Component {
       category_name: currentMenu[0].name
     });
   }
+  componentDidMount(){
+    this.setFrameHeight();
+    window.onresize = this.setFrameHeight.bind(this);
+  }
   renderCategoryPage(){
     return (
       <div className="container">
@@ -39,21 +43,35 @@ export default class ListPage extends Component {
       </div>
     )
   }
+  setFrameHeight(){
+    if(this.refs.exp_frame){
+      var windowHeight = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
+      var frameOffset =  this.refs.exp_frame.getBoundingClientRect().top;
+      var frameHeight = windowHeight-frameOffset;
+      this.setState({
+        frameHeight
+      })
+    }
+  }
   renderChildrenFrame(){
+    var frameStyle={
+      height: this.state.frameHeight
+    }
     var childitem = ExperimentsList[this.props.route.name].filter(function(a){ return a.id == this.props.params.id }.bind(this))[0];
     return (
       <div>
-        <h1 className="text-center">
-          {this.renderGitLink(childitem)}
-          {this.state.category_title} - {childitem.title}
-        </h1>
-        <hr className="mb0" />
-        <iframe className="exp-frame" src={childitem.link} ></iframe>
+        <div id="subheader">
+          <h1 className="text-center">
+            {this.renderGitLink(childitem)}
+            {this.state.category_title} - {childitem.title}
+          </h1>
+          <hr className="mb0" />
+        </div>
+        <iframe style={frameStyle} ref="exp_frame" className="exp-frame" src={childitem.link} ></iframe>
       </div>
     )
   }
   renderGitLink(child){
-    console.log(child,"child");
     if(child.git){
       return (
         <a className="github-link" href={child.git} target="_blank" >
@@ -68,6 +86,8 @@ export default class ListPage extends Component {
       category_title: currentMenu[0].title,
       category_name: currentMenu[0].name
     });
+
+    this.setFrameHeight();
   }
   render(){
     if(this.props.params.id){

@@ -70,8 +70,7 @@ li.list-group-item {
 .exp-frame {
   width: 100%;
   border: 0px solid #fff;
-  height: 100%;
-  min-height: 600px; }
+  height: 100%; }
 
 .github-link {
   margin-right: 10px; }
