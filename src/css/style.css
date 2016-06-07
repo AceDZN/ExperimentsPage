@@ -13,6 +13,8 @@ a {
 
 h1, h2 {
   text-shadow: 0px 1px 0px #fff,0px 2px 4px #4C4C4C,0px -3px 2px #fff; }
+  h1 br, h2 br {
+    display: none; }
 
 h3 {
   text-shadow: 0 1px 0 #fff,0 1px 2px #4c4c4c,0 -3px 2px #fff; }
@@ -73,4 +75,28 @@ li.list-group-item {
   height: 100%; }
 
 .github-link {
-  margin-right: 10px; }
+  margin-left: 10px; }
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-bottom: 0px; }
+  .navbar-brand svg {
+    padding: 5px;
+    max-width: 70px;
+    max-height: 70px; }
+  .github-link {
+    width: 30px;
+    height: 30px;
+    display: inline-block; }
+    .github-link svg {
+      max-width: 100%;
+      max-height: 100%; }
+  #subheader h1 {
+    font-size: 26px;
+    margin: 10px auto; }
+    #subheader h1 br {
+      display: block; }
+    #subheader h1 span.dash {
+      display: none; }
+  #subheader hr {
+    margin-top: 5px; } }

@@ -62,8 +62,7 @@ export default class ListPage extends Component {
       <div>
         <div id="subheader">
           <h1 className="text-center">
-            {this.renderGitLink(childitem)}
-            {this.state.category_title} - {childitem.title}
+            {this.state.category_title}<br /><span className="dash"> - </span>{childitem.title}{this.renderGitLink(childitem)}
           </h1>
           <hr className="mb0" />
         </div>
