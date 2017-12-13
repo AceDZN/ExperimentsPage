@@ -20,26 +20,8 @@ export default class ListPage extends Component {
   renderCategoryPage(){
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-sm-6 col-sm-offset-3 ">
-            <div className="row">
-              <div className="col-xs-9 text-left">
-                <h1>
-                  {this.state.category_title}
-                </h1>
-              </div>
-              <div className="col-xs-3 text-right platform-logo">
-                <IconicDisplay svg={this.state.category_name} height="40" width="40" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div className="row">
-          <div className="col-xs-12 col-sm-4 col-sm-offset-4 list-container">
-            <ExperimentsUL parent={this.state.category_name} list={ExperimentsList[this.state.category_name]} />
-          </div>
-        </div>
+      <h2>BLAAAA</h2>
+        
       </div>
     )
   }
